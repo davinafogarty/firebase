@@ -5,7 +5,7 @@ import { getDatabase, ref, push, get, child }
 
 // Your Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCrs-U0Zs1vUbRQbESbejRvIBlGFn4-M-s",
+    apiKey: "AIzaSyCr************jRvIBlGFn4-M-s",
     authDomain: "fir-alt1.firebaseapp.com",
     databaseURL: "https://fir-alt1-default-rtdb.firebaseio.com",
     projectId: "fir-alt1",
