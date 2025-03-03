@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homeless Data Ireland</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pygal/2.4.0/pygal-tooltips.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Homeless Data in Ireland</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page2.html">Population</a>
+            <a href="page3.html">Tourism</a>
+            <a href="page4.html">Housing</a>
+            <a href="page5.html">Form (AR2)</a>
+    </header>
+
+    <main>
+        <h2>Welcome to Ireland Data</h2>
+        <p>Here you will find information on the population, tourism and housing in Ireland.</p>
+        <img src="images/ireland.jpg" alt="Ireland">
+        <p>This website will give you a breakdown of the data in the CSV file</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header</th>
+                    <th>Description</th>
+                </tr>
+            </thead>       
+
+            <tbody>
+                <tr>
+                    <td>County</td>
+                    <td>The name of the county</td>
+                </tr>
+                <tr>
+                    <td>Population</td>
+                    <td>The population of the county</td>
+                </tr>
+                <tr>
+                    <td>Area</td>
+                    <td>The area of the county in square km</td>
+                </tr>
+                <tr>
+                    <td>GVA</td>
+                    <td>Gross Value Added</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Charts</h2>
+        <p>Here are some charts to help you visualise the data</p>
+        <div id="charts">
+        <img src="../Python/matplotlib/population_chart.png" alt="Population">
+        </div>
+
+        <div id="charts">
+            <embed src="images/population_chart.svg">
+        </div>
+        <div id="charts">
+            <img src="../Python/matplotlib/house_price_histogram.png" alt="House Prices">
+        </div>
+
+        <label>Rent you can Afford</label>
+        <input type="range" id="rent" name="rent" min="750" max="1800" step="50" value="1200" oninput="showRent(this.value)">
+        <output id="res">1200</output>
+
+        <embed src="images/house_price_histogram.svg" id="chart" style="display: none;">
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Ireland Data</p>
+    </footer>
+
+    <script>
+        function showRent(value) {
+            var output = document.getElementById("res");
+            output.value = value;
+            var chart = document.getElementById("chart");
+            chart.style.display = "block";
+            chart.src = "images/rent/" + value + ".svg";
+        }
+    </script>
+</body>
+</html>

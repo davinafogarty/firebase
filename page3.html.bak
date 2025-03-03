@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homeless Data Ireland</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pygal/2.4.0/pygal-tooltips.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Homeless Data in Ireland</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page2.html"></a>
+            <a href="page3.html">Children</a>
+            <a href="page4.html">Housing</a>
+            <a href="page5.html">Form (AR2)</a>
+    </header>
+
+    <main>
+        <h2>Welcome to Ireland Data</h2>
+        <p><blockquote>According to the numbers – which are published on the last Friday of every month –</b> there were 15,286 people in emergency accommodation, including 4,603 children in 2,164 families over the seven days up to January 26th..</p>
+		<p>The increase over a four week period to the end of January saw almost 100 additional children in over 70 families enter emergency accommodation, the figures show.</p> </blockquote>
+        <img src="https://www.irishtimes.com/resizer/v2/TWBVR75XKZFGHL4L4XELUNCUSU.JPG?auth=ad4c177fe5edbe23e1b3f24ce80d3d04e28a8e2a5ddad622b31ff181981bedfa&smart=true&width=1440&height=960" alt="Tent on streetside in Dublin">
+        <p>This page shows data on the number of children that are currently homeless in Ireland</p>
+        
+
+        <h2>Charts</h2>
+        <p>Here are some charts to help you visualise the data</p>
+		<p> In this chart you can see that the highest average number of dependents happens in the North West with approximately 2.5 dependents per homeless family. This is despite the percentage of homeless people in the region</p>
+		<p> Despite having a relatively high percentage homeless population, the Mid-East region has the lowest average number of dependents per family at 1.58 dependents per family </p>
+        <div id="charts">
+        <embed src="pygal/homeless_pop_children.svg" alt="Population">
+        </div>
+
+        <div id="charts">
+            <embed src="pygal/homeless_region_chart.svg">
+        </div>
+        
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Homeless Data Ireland</p>
+    </footer>
+
+    
+</body>
+</html>
